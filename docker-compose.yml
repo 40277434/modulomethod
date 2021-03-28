@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  modulo:
+    image: 40277434/webcalc-modulo
+    container_name: modulo_container
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+      - 443:443
